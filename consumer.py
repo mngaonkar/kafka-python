@@ -27,5 +27,6 @@ try:
         process_message(msg)
 except Exception as e:
     print("error processing message, err = ", e)
+    c.close()
 
 
