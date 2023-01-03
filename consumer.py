@@ -9,7 +9,7 @@ def process_message(msg):
 
 try:
     c = Consumer({"bootstrap.servers": "portal.altbox.online:9092",
-        "group.id": "recommend-consmuer",
+        "group.id": "recommend-consumer",
         "auto.offset.reset": "smallest"})
 except Exception as e:
     print("error creating consumer, err = ", e)
